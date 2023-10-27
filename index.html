@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript 1</title>
+</head>
+<body>
+    <input type="text" id="inputName"><br>
+    <button onclick="alertName();">Alert</button>
+
+    <script>
+        let obj = {
+            fname: "Non",
+            lname: "Naja"
+        };
+
+        let arr = ["John", "Jane", "Joe", 1, 2, 3];
+
+        function showObj() {
+            document.write(`My name is ${obj.fname} ${obj.lname} <br>`);
+        };
+
+        function showArr() {
+            document.write(arr);
+        };
+
+        showObj();
+        showArr();
+
+        function alertName() {
+            let name = document.getElementById("inputName").value;
+            alert(name);
+        };
+    </script>
+</body>
+</html>
